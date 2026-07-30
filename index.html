@@ -294,22 +294,181 @@
     </div>
 
 </section>
-
 <section id="galeria" class="galeria">
 
-    <h2>Galeria</h2>
+    <div class="titulo-galeria">
+        <h2>Nossos <span>Serviços</span></h2>
+        <p>Clique em um serviço para ver todas as fotos</p>
+    </div>
 
-    <div class="fotos">
+    <div class="cards-galeria">
 
-        <img src="imagens/galeria-01.jpeg" alt="Moto 1">
-        <img src="imagens/galeria-02.jpeg" alt="Carro 2">
-        <img src="" alt="">
-        <img src="imagens/polimento-de-farol-01.jpeg" alt="polimento de farol 1">
+        <!-- Polimento -->
+        <div class="card-galeria" onclick="abrirGaleria('polimento')">
+
+            <img
+                src="imagens/capa-polimento.png"
+                alt="Polimento automotivo"
+            >
+
+            <div class="card-conteudo">
+                <h3>Polimento</h3>
+                <p>Brilho que impressiona</p>
+
+                <button type="button">
+                    Ver fotos
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Cristalização -->
+        <div class="card-galeria" onclick="abrirGaleria('cristalizacao')">
+
+            <img
+                src="imagens/capa-cristalizaçao.png"
+                alt="Cristalização automotiva"
+            >
+
+            <div class="card-conteudo">
+                <h3>Cristalização</h3>
+                <p>Proteção que dura</p>
+
+                <button type="button">
+                    Ver fotos
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Lavagem detalhada -->
+        <div class="card-galeria" onclick="abrirGaleria('lavagem')">
+
+            <img
+                src="imagens/capa-lavagem-detalhada.png"
+                alt="Lavagem detalhada"
+            >
+
+            <div class="card-conteudo">
+                <h3>Lavagem detalhada</h3>
+                <p>Cuidado em cada detalhe</p>
+
+                <button type="button">
+                    Ver fotos
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Polimento de faróis -->
+        <div class="card-galeria" onclick="abrirGaleria('farois')">
+
+            <img
+                src="imagens/capa-polimento-de-farol.png"
+                alt="Polimento de faróis"
+            >
+
+            <div class="card-conteudo">
+                <h3>Polimento de faróis</h3>
+                <p>Mais visibilidade e segurança</p>
+
+                <button type="button">
+                    Ver fotos
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Higienização interna -->
+        <div class="card-galeria" onclick="abrirGaleria('higienizacao')">
+
+            <img
+                src="imagens/capa-higienizaçao-interna.png"
+                alt="Higienização interna"
+            >
+
+            <div class="card-conteudo">
+                <h3>Higienização interna</h3>
+                <p>Limpeza e conforto para você</p>
+
+                <button type="button">
+                    Ver fotos
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Lavagem de motos -->
+        <div class="card-galeria" onclick="abrirGaleria('motos')">
+
+            <img
+                src="imagens/capa-lavagem-de-motos.png"
+                alt="Lavagem de motos"
+            >
+
+            <div class="card-conteudo">
+                <h3>Lavagem de motos</h3>
+                <p>Brilho e proteção total</p>
+
+                <button type="button">
+                    Ver fotos
+                </button>
+            </div>
+
+        </div>
+
     </div>
 
 </section>
-<section id="sobre" class="sobre">
 
+<!-- Galeria aberta por cima do site -->
+<div class="galeria-aberta" id="galeriaAberta">
+
+    <div class="topo-galeria-aberta">
+
+        <h3 id="tituloGaleriaAberta">
+            Serviço
+        </h3>
+
+        <span id="contadorFotos">
+            1 de 1
+        </span>
+
+        <button
+            type="button"
+            class="fechar-galeria"
+            onclick="fecharGaleria()"
+        >
+            &times;
+        </button>
+
+    </div>
+
+    <button
+        type="button"
+        class="seta-galeria seta-esquerda"
+        onclick="voltarFoto()"
+    >
+        &#10094;
+    </button>
+
+    <img
+        id="fotoAmpliada"
+        src=""
+        alt="Foto ampliada do serviço"
+    >
+
+    <button
+        type="button"
+        class="seta-galeria seta-direita"
+        onclick="proximaFoto()"
+    >
+        &#10095;
+    </button>
+
+</div>
+
+<section id="sobre" class="sobre">
     <div class="texto">
 
         <h2>Quem Somos</h2>
