@@ -84,6 +84,41 @@ header{
 .logo img:hover{
     transform:scale(1.05);
 }
+.logo{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.logo img{
+    width:85px;
+    height:auto;
+}
+
+.logo-texto{
+    display:flex;
+    flex-direction:column;
+    line-height:1;
+}
+
+.logo-texto h1{
+    font-size:22px;
+    font-weight:700;
+    color:#fff;
+    letter-spacing:3px;
+    margin:0;
+}
+
+.logo-texto span{
+    margin-top:6px;
+    font-size:17px;
+    letter-spacing:2px;
+    color:#009dff;
+    font-weight:500;
+}
+.logo-texto h1{
+    font-family:"Orbitron",sans-serif;
+}
 
 .menu{
     display:flex;
@@ -99,7 +134,7 @@ header{
 }
 
 .menu > a:hover{
-    color:#00bfff;
+    color:#009dff
 }
 
 .menu-toggle{
